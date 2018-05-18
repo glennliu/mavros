@@ -7,6 +7,8 @@ plugin_blacklist:
 - distance_sensor
 - rangefinder
 
+- wind_estimation
+- trajectory
 plugin_whitelist: []
 # 'sys_*'
 
