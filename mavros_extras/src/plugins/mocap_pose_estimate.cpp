@@ -93,6 +93,8 @@ private:
 	{
 		Eigen::Quaterniond q_enu;
 
+		//ROS_INFO("mocap_pose_estimate received data!");
+
 		tf::quaternionMsgToEigen(pose->pose.orientation, q_enu);
 		auto q = ftf::transform_orientation_enu_ned(
 					ftf::transform_orientation_baselink_aircraft(q_enu));
