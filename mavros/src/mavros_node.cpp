@@ -17,6 +17,7 @@ int main(int argc, char *argv[])
 {
 	ros::init(argc, argv, "mavros");
 
+	ROS_INFO("mavros_node started!");
 	mavros::MavRos mavros;
 	mavros.spin();
 
